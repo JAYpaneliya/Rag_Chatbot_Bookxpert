@@ -1,0 +1,18 @@
+# RAG Document Q&A Bot — Dependencies (all free/open-source)
+
+# Document parsing
+PyMuPDF==1.24.5           # PDF text extraction
+python-docx==1.1.2        # DOCX parsing
+
+# Embeddings (free, local — no API key needed)
+sentence-transformers==3.0.1
+torch==2.3.1              # CPU-only is fine; sentence-transformers pulls this
+
+# Vector database (free, local, persistent)
+chromadb==0.5.3
+
+# Web UI (bonus)
+streamlit==1.36.0
+
+# HTTP (for Ollama calls)
+requests==2.32.3
